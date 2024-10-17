@@ -5,6 +5,7 @@ import ativ2 from "../ativ2";
 
 export default function Rotas(){
     return (
+        <>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={Home}>Home</Route>
@@ -12,5 +13,6 @@ export default function Rotas(){
                 <Route path="/ativ2" element={ativ2}>Atividade 2</Route>
             </Routes>
         </BrowserRouter>
+        </>
     )
 }
