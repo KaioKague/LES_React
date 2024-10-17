@@ -1,15 +1,10 @@
 import React, { createElement } from 'react';
 import ReactDOM from 'react-dom/client';
-import Letreiro from './Letreiro.js';
-import Relogio from './Relogio.js'
+import Home from './Home.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Relogio/>
-    <Letreiro/>
+    <Home></Home>
   </React.StrictMode>
 );
-document.createElement('div').setAttribute('id', 'relogio');
-
-
