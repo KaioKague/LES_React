@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#root{
+    width: 35%;
+}
+.contador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#man{
+    margin-right: 80px;
+}
+.contadores{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+#corpo{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: white;
+}
+.numero {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    border: solid 1px #ccc;
+    border-width: 2px;
+    width: 100px;
+}
+button {
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #eee;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.imgbotao{
+    height: 20px;
+    width: 20px;
+}
+
+.image{
+    height: 80px;
+    width: 80px;
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+}

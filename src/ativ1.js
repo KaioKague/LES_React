@@ -1,18 +1,16 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import Letreiro from 'Letreiro.js';
-import Relogio from 'Relogio.js';
-
-var contador = 0;
+import Letreiro from './Letreiro.js';
+import Relogio from './Relogio.js';
 
 function Ativ1() {
     return (
       <>
-      <Letreiro></Letreiro>
-      <Relogio></Relogio>
+      <Letreiro/>
+      <Relogio/><br/> <br/>
       <Link to="/">Voltar</Link>
       </>
     );
 }
 
-  
+export default Ativ1;
