@@ -7,23 +7,23 @@ import Total from './ativ2/Total';
 function Ativ2(){
     return (
         <div>
-            <div id="corpo">
-                <div className='contador' id='total'>
-                    <Total/>
+        <div id="corpo">
+            <div className='contador' id='total'>
+                <Total/>
+            </div>
+            <div className='contadores'>
+                <div className='contador' id='man'>
+                <img className='image' src='./icon/homem.png' alt="Homem"></img>
+                <Cont/>
                 </div>
-                <div className='contadores'>
-                    <div className='contador' id='man'>
-                    <img className='image' src='./icon/homem.png' alt="Homem"></img>
-                    <Cont/>
-                    </div>
-                    <div className='contador' id='woman'>
-                    <img className='image' src='./icon/mulher.png' alt="Mulher"></img>
-                    <Cont/>
-                    </div>
+                <div className='contador' id='woman'>
+                <img className='image' src='./icon/mulher.png' alt="Mulher"></img>
+                <Cont/>
                 </div>
             </div>
-            <Link to="/">Voltar</Link>
         </div>
+        <Link to="/">Voltar</Link>
+    </div>
     );
 }
 

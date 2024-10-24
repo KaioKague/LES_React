@@ -1,32 +1,31 @@
 import React from 'react';
 import { useState } from 'react';
 
-export function Cont(name){
-    var [count, setCount] = useState(0);
-    if (name === "click"){
-        setCount(count += 1);
-        return count;
+function Contador(){
+    function Cont(state){
+    const [count, setCount] = useState(0);
+    if (state === "click"){
+        setCount(count => count + 1);
     }
-    else if(name === "unclick"){
+    else if(state === "unclick"){
         if (count > 0)
-            setCount(count -= 1);
-        return count;
+            setCount(count => count - 1);
     }
     else{
         return count;
-    }
-}
-
-export default function Contador(){
-    return (
-        <>
-        <div className='botoes'>
-        <button onClick={Cont('click')} className='contador' ><img className='imgbotao' src='./icon/mais.png' alt='Skill Issue'/></button>
-        <button onClick={Cont('unclick')} className='contador'><img className='imgbotao' src={'./icon/menos.png'} alt='Skill Issue'/></button>
-        </div>
-        <div className='numero'>
-            { Cont('count') }
-        </div>
-        </>
+    }}
+    return(
+    <>
+    <div className='botoes'>
+    <button onClick={Cont} className='contador' value='click'><img className='imgbotao' src='./icon/mais.png' alt='Skill Issue'/></button>
+    <button onClick={Cont} className='contador' value='unclick'><img className='imgbotao' src={'./icon/menos.png'} alt='Skill Issue'/></button>
+    </div>
+    <div className='numero'>
+        <p>0</p>
+    </div>
+    </>
     );
 }
+
+window.addEventListener('load',() => Contador());
+export default Contador;
