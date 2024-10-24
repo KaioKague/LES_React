@@ -1,0 +1,2 @@
+<button onClick={() => {func1(); func2();}} className='contador'><img className='imgbotao' src='./icon/mais.png' alt='Skill Issue'/></button>
+// Mais de uma funçao em um onclick
