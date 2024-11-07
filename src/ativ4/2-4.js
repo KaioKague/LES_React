@@ -9,7 +9,7 @@ export default function Formulario(){
         e.preventDefault();
         setTimeout(() => {
             alert(`Você disse ${mesg} para ${to}`);
-        }, 5000);
+        }, 2000);
     }
     return (
         <>
